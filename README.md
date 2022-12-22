@@ -7,7 +7,7 @@ To run this application:
 ```
 flask --debug run
 ```
-To run this application specifying port : 
+To run this application with specifying port : 
 ```
 flask --debug run --port='port-number'
 ```
