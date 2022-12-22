@@ -43,3 +43,54 @@ code {
 .small {
     font-size: 0.75rem;
 }
+/* Add this to your main.css file or include it in the head of your HTML document */
+
+/* Style the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label, input[type="submit"] {
+    font-size: 1rem;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 60%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Position the form inside the header element */
+  form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Add this to your main.css file or include it in the head of your HTML document */
+
+/* Style the form elements */
+form {
+    display: flex;
+    align-items: center;
+  }
+  
+  label, input[type="submit"] {
+    font-size: 1rem;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 60%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Position the form to the right of the icon */
+  form {
+    margin-left: auto;
+  }
+  

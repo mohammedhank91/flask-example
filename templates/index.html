@@ -1,16 +1,55 @@
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+  </head>
+  <body>
     <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                <i class="fab fa-github"></i>
-            </p>
-        </header>
+      <!-- Add this to your index.html file -->
+        {% if message %}
+            <p>{{ message }}</p>
+            {% endif %}
+        <!-- End of the addition -->
+      <header class="App-header">
+        <img
+          src="{{ url_for('static', filename='Octocat.png') }}"
+          class="App-logo"
+          alt="logo"
+        />
+        <!-- Add the login form here -->
+        <form action="/login" method="post">
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" /><br />
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+        <p>Edit <code>templates/index.html</code> and save to reload.</p>
+        <p>
+          <a
+            class="App-link"
+            href="https://flask.palletsprojects.com/en/1.1.x/quickstart/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn Flask
+          </a>
+        </p>
+        <p>
+          <a
+            class="App-link"
+            href="https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch Flask Tutorial
+          </a>
+        </p>
+      </header>
     </div>
-</body>
-
+  </body>
 </html>
